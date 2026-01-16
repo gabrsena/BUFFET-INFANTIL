@@ -114,9 +114,20 @@ const App: React.FC = () => {
               <Zap className="w-4 h-4" />
               <span>O MELHOR BUFFET DO WANEL VILLE!</span>
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-purple-900 leading-tight mb-8 hover:scale-105 transition-transform duration-500 cursor-default">
-              <span className="text-glow-purple block">A Festa dos Sonhos</span>
-              <span className="text-pink-500 text-glow-pink">Começa Aqui! 🎈</span>
+            
+            {/* NOVO TÍTULO COM ANIMAÇÃO DISPERSIVA (SHATTER EFFECT) */}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-purple-900 leading-tight mb-8 cursor-default group select-none">
+              <span className="block mb-4 overflow-visible">
+                <span className="inline-block transition-all duration-500 ease-out group-hover:-translate-x-12 group-hover:-translate-y-6 group-hover:-rotate-12 text-glow-purple mr-3">A</span>
+                <span className="inline-block transition-all duration-500 ease-out group-hover:translate-x-4 group-hover:-translate-y-12 group-hover:rotate-6 text-glow-purple mr-3">Festa</span>
+                <span className="inline-block transition-all duration-500 ease-out group-hover:-translate-x-4 group-hover:translate-y-8 group-hover:-rotate-6 text-glow-purple mr-3">dos</span>
+                <span className="inline-block transition-all duration-500 ease-out group-hover:translate-x-16 group-hover:translate-y-4 group-hover:rotate-12 text-glow-purple">Sonhos</span>
+              </span>
+              <span className="block text-pink-500 overflow-visible">
+                <span className="inline-block transition-all duration-500 ease-out group-hover:-translate-x-16 group-hover:translate-y-12 group-hover:-rotate-12 text-glow-pink mr-3">Começa</span>
+                <span className="inline-block transition-all duration-500 ease-out group-hover:translate-x-12 group-hover:-translate-y-10 group-hover:rotate-6 text-glow-pink mr-3">Aqui!</span>
+                <span className="inline-block transition-all duration-500 ease-out group-hover:scale-150 group-hover:rotate-[360deg] transition-transform">🎈</span>
+              </span>
             </h1>
           </div>
 
@@ -185,7 +196,7 @@ const App: React.FC = () => {
                   ) : mockupUrl ? (
                     <div className="animate-in fade-in zoom-in duration-700 w-full h-full relative">
                       <img src={mockupUrl} className="w-full h-full object-cover transition-transform duration-700 group-hover/mockup:scale-110" alt="Prévia da Festa" loading="lazy" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/20 to-transparent opacity-0 group-hover/mockup:opacity-100 transition-all duration-500 flex flex-col justify-end p-8">
+                      <div className="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/20 to-transparent opacity-0 group-hover/mockup:opacity-100 transition-all duration-500 flex flex-col justify-end p-8 text-white">
                         <div className="transform translate-y-8 group-hover/mockup:translate-y-0 transition-transform duration-500 delay-100">
                           <p className="text-yellow-400 font-black text-sm mb-2 tracking-[0.3em] uppercase">Resultado Mágico</p>
                           <h4 className="text-white text-3xl font-black mb-4 leading-tight">Uau! Imagine isso ao vivo no Atelie Kids!</h4>

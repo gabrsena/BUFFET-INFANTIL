@@ -99,7 +99,6 @@ export const Hero: React.FC = () => {
               src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80" 
               alt="Festa Neon Infantil" 
               className="rounded-[2.5rem] shadow-2xl relative w-full object-cover h-[400px] md:h-[600px] brightness-75 contrast-125"
-              loading="lazy"
             />
           </div>
         </div>

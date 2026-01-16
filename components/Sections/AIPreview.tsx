@@ -145,7 +145,7 @@ export const AIPreview: React.FC = () => {
 
                 <div className={`w-full h-48 border-4 border-dashed ${previewUrl ? 'border-pink-400' : 'border-purple-200'} rounded-[2.5rem] flex flex-col items-center justify-center bg-white group-hover:bg-purple-50 transition-all shadow-xl relative overflow-hidden`}>
                   {previewUrl ? (
-                    <img src={previewUrl} className="h-full w-full object-cover rounded-[2rem] opacity-80" alt="Preview" loading="lazy" />
+                    <img src={previewUrl} className="h-full w-full object-cover rounded-[2rem] opacity-80" alt="Preview" />
                   ) : (
                     <>
                       <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-inner">
@@ -201,7 +201,6 @@ export const AIPreview: React.FC = () => {
                         src={mockupUrl} 
                         className="w-full h-full object-cover animate-in fade-in zoom-in duration-1000 transition-transform duration-1000 group-hover/mockup:scale-110 brightness-105" 
                         alt="Mockup da Festa" 
-                        loading="lazy"
                       />
                       
                       {/* Overlay Interativo */}
