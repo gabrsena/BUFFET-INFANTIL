@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Básico -->
+    <title>Atelie Kids 🎈 | Buffet Infantil no Wanel Ville, Sorocaba</title>
+    <meta name="description" content="O Atelie Kids é o buffet infantil mais moderno e completo do Wanel Ville, Sorocaba. Festas mágicas com tecnologia de IA, brinquedão gigante, games e o melhor buffet gourmet da região." />
+    <meta name="keywords" content="buffet infantil sorocaba, festa infantil wanel ville, atelie kids sorocaba, buffet com ia, brinquedão gigante sorocaba, festa de aniversário infantil sorocaba" />
+    <meta name="author" content="Atelie Kids" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ateliekidssorocaba.com.br" />
+
+    <!-- Open Graph / WhatsApp / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ateliekidssorocaba.com.br" />
+    <meta property="og:title" content="Atelie Kids 🎈 | A Festa dos Sonhos Começa Aqui!" />
+    <meta property="og:description" content="Conheça o Buffet Infantil mais moderno do Wanel Ville. Tecnologia, diversão e gastronomia gourmet para uma festa inesquecível." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ateliekidssorocaba.com.br" />
+    <meta property="twitter:title" content="Atelie Kids 🎈 | Buffet Infantil Sorocaba" />
+    <meta property="twitter:description" content="Onde a diversão encontra a magia no Wanel Ville. Realize a festa perfeita!" />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎈</text></svg>">
+
+    <!-- Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Sora:wght@300..800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- JSON-LD: Dados Estruturados para SEO Local -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Atelie Kids Buffet Infantil",
+      "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80",
+      "@id": "https://ateliekidssorocaba.com.br",
+      "url": "https://ateliekidssorocaba.com.br",
+      "telephone": "+55-15-99999-9999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Elias Maluf, 000",
+        "addressLocality": "Sorocaba",
+        "addressRegion": "SP",
+        "postalCode": "18055-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.52187313837494,
+        "longitude": -47.51478542031027
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "22:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/ateliekids",
+        "https://wa.me/5515999999999"
+      ]
+    }
+    </script>
+
+    <style>
+      body {
+        font-family: 'Sora', sans-serif;
+        background-color: #fffcf9;
+        color: #1e1b4b;
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, .font-fredoka {
+        font-family: 'Fredoka', sans-serif;
+      }
+      
+      .text-glow-purple {
+        text-shadow: 0 0 10px rgba(147, 51, 234, 0.3), 0 0 20px rgba(147, 51, 234, 0.2);
+        transition: all 0.4s ease;
+      }
+      .text-glow-purple:hover {
+        text-shadow: 0 0 15px rgba(147, 51, 234, 0.6), 0 0 30px rgba(147, 51, 234, 0.4);
+      }
+      
+      .text-glow-pink {
+        text-shadow: 0 0 10px rgba(219, 39, 119, 0.3), 0 0 20px rgba(219, 39, 119, 0.2);
+        transition: all 0.4s ease;
+      }
+      .text-glow-pink:hover {
+        text-shadow: 0 0 15px rgba(219, 39, 119, 0.6), 0 0 30px rgba(219, 39, 119, 0.4);
+      }
+
+      @keyframes confetti-fall {
+        0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+      }
+      .confetti-piece {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #ffd700;
+        top: -10vh;
+        z-index: 0;
+        animation: confetti-fall linear infinite;
+      }
+
+      @keyframes progress-shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+      .progress-shimmer {
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+        background-size: 200% 100%;
+        animation: progress-shimmer 1.5s infinite;
+      }
+
+      .bg-confetti {
+        background-image: radial-gradient(#9333ea 0.5px, transparent 0.5px), radial-gradient(#db2777 0.5px, #fffcf9 0.5px);
+        background-size: 30px 30px;
+        background-position: 0 0, 15px 15px;
+        opacity: 0.05;
+      }
+
+      .bouncy-hover:hover {
+        transform: scale(1.05) rotate(1deg);
+        transition: transform 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      }
+
+      @keyframes bounce-gentle {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+      }
+      .animate-bounce-gentle {
+        animation: bounce-gentle 3s ease-in-out infinite;
+      }
+
+      .glass-card {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        border: 2px solid rgba(255, 255, 255, 0.6);
+      }
+
+      @keyframes float-slow {
+        0% { transform: translate(0, 0) rotate(0deg); }
+        33% { transform: translate(10px, -15px) rotate(5deg); }
+        66% { transform: translate(-10px, 10px) rotate(-5deg); }
+        100% { transform: translate(0, 0) rotate(0deg); }
+      }
+      .animate-float-slow {
+        animation: float-slow 8s ease-in-out infinite;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+        "@google/genai": "https://esm.sh/@google/genai@^1.36.0"
+      }
+    }
+    </script>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+  </body>
+</html>

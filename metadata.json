@@ -1,0 +1,8 @@
+{
+  "name": "Atelie Kids - O Buffet Mais Divertido de Sorocaba",
+  "description": "Buffet infantil no Wanel Ville, Sorocaba. Festas mágicas com tecnologia de IA e muita diversão!",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
